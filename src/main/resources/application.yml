@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: Product Comparision Service
+  data:
+    mongodb:
+        host: 127.0.0.1
+        port: 27017
+        authentication-database: admin
+        #username: <username specified on MONGO_INITDB_ROOT_USERNAME>
+        #password: <password specified on MONGO_INITDB_ROOT_PASSWORD>
+        database: admin        
+server:
+  port: 8091

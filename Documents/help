@@ -1,0 +1,63 @@
+API's :
+
+1. Search API:
+	Request type: Get
+	URL: localhost:8091/searchProducts
+	Request Body: {
+    "product_name":"Voltas FAN",
+    "category":"FAN"
+	}
+				  
+2. Insert Single Record:
+
+	Request type: POST
+	URL: localhost:8091/createProduct
+	Request Body: {
+    "product_id" : 2,
+    "product_name" : "voltas fan",
+    "category" : "fan",
+    "price" : 100,
+    "buy_type" : "web",
+    "store_name" : "amazon",
+    "location_url" : "https://amazon.com/fans",
+    "image_url" : "https://azure/blob/image1.png"
+	}
+
+3. Insert Multiple Records:
+
+	Request type: POST
+	URL: localhost:8091/createProducts
+	Request Body: [{
+    "product_id" : 12,
+    "product_name" : "voltas fan",
+    "category" : "fan",
+    "price" : 100,
+    "buy_type" : "web",
+    "store_name" : "amazon",
+    "location_url" : "https://amazon.com/fans",
+    "image_url" : "https://azure/blob/image1.png"
+	},{
+	    "product_id" : 21,
+	    "product_name" : "voltas fan",
+	    "category" : "fan",
+	    "price" : 100,
+	    "buy_type" : "web",
+	    "store_name" : "amazon",
+	    "location_url" : "https://amazon.com/fans",
+	    "image_url" : "https://azure/blob/image1.png"
+	},{
+	    "product_id" : 22,
+	    "product_name" : "voltas fan",
+	    "category" : "fan",
+	    "price" : 100,
+	    "buy_type" : "web",
+	    "store_name" : "amazon",
+	    "location_url" : "https://amazon.com/fans",
+	    "image_url" : "https://azure/blob/image1.png"
+	}]
+	
+
+Used Eureka and Docker File. PFA Testcase files in Test package
+Since I don't have Eureka Registry servers I din't filled the Registry server details in YML file.
+For now Single YML is used without any Profiles
+Due to my PC issue, I was not able to do the performance testing using JMeter
